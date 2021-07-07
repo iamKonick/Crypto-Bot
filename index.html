@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Crypto Portal</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <footer>
+        <section class="news-ticker">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-between align-items-center breaking-news">
+                        <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news">Breaking News</div>
+                        <marquee id="bitcoin-news" class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                            <div class="news-ticker">
+                                <p id="nocoin-p">A cryptocurrency (or “crypto”) is a digital currency that can be used to buy goods and services, <span class="dot"></span>but uses an online ledger with strong cryptography to secure online transactions.Much of the interest in these unregulated currencies is to trade for profit, <span class="dot"></span> with speculators at times driving prices skyward...</p>
+                                <p id="bitcoin-p">Elon Musk Confirms He Owns Bitcoin, Has Not Sold Any — Tesla Intends to Hold BTC Long Term, Sold Some to Prove Liquidity.<span class="dot"></span> Bitcoin climbs 10% as cryptocurrency market attempts a comeback from last week’s plunge.<span class="dot"></span> It has risen 80% in 2021 with backing from institutional investors and companies like Tesla.</p>
+                                <p id="litecoin-p">Litecoin rallied by 10.43% on Monday.<span class="dot"></span> Reversing a 0.49% loss from Sunday, Litecoin ended the day at $247.65. <span class="dot"></span>Litecoin left the major support and resistance levels untested early on.At the time of writing, Litecoin was down by 0.69% to $245.94.<span class="dot"></span> A mixed start to the day saw Litecoin rise to an early morning high $249.56 before falling to a low $245.78.</p>
+                                <p id="dogcoin-p">If you had bought $1,000 worth of Dogecoin (CRYPTO:DOGE) on Jan. 1, you would have had $93,127 when the cryptocurrency peaked on April 16. <span class="dot"></span>Crypto bull calls dogecoin a mania and a bubble, says her firm hasn’t touched it. <span class="dot"></span>Billionaire Mark Cuban Says Dogecoin Is Better Than a Lottery Ticket</p>
+                                <p id="ethereum-p">Ethereum is now far slower and more expensive than it used to be.<span class="dot"></span> Digital currency ethereum jumps to record high. <span class="dot"></span>Ether was last up 4.32% at $2,644.07. <span class="dot"></span>Bitcoin, was last up 1.68% at $54,984.31 but still more than 15% below its record high at 64,895.22 set on April 14.<span class="dot"></span> How Ethereum Works: It Seems Like We’re Living in a Futuristic Alternate Universe</p>
+                                <p id="xrp-p">The legal battle over cryptocurrency XRP has taken another turn. <span class="dot"></span>Ripple wants to stop the SEC asking foreign regulators for assistance with the XRP investigation. <span class="dot"></span>SEC seeks to knock out Ripple defense, says no duty to warn over XRP</p>
+                            </div>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <section class="news-filter">
+        <div class="container mt-4">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-9">
+                    <div class="card p-4 mt-3">
+                        <h3 class="heading mt-5 text-center">Hi! Welcome To Crypto Portal!</h3>
+                        <div class="d-flex justify-content-center px-5">
+                            <div class="search"> <input type="text" class="search-input" placeholder="Search your favourite crypto currency for latest news..." name=""> <a href="#" onclick="working()" class="search-icon"> <i class="fa fa-search"></i> </a> </div>
+                        </div>
+                        <div class="row"><h6 class="heading mt-5 text-center"> Or select from below</h6></div>                        
+                        <div class="row mt-4 g-1 px-4 mb-5">
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "bitcoin()" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/45_Bitcoin_logo_logos-256.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "bitcoin()" id="bitcoin"  href="#" role="BitCoin">BitCoin</a>
+                                    </span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "litecoin()" src="https://cdn3.iconfinder.com/data/icons/currency-and-cryptocurrency-signs/64/cryptocurrency_blockchain_Litecoin_LTC-128.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "litecoin()" id="litecoin" href="#" role="LiteCoin">LiteCoin</a>
+                                    </span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "dogcoin()" src="https://cdn0.iconfinder.com/data/icons/blockchain-classic/256/Dogecoin-128.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "dogcoin()" id="dogcoin"  href="#" role="Dogcoin">Dogcoin</a>
+                                    </span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "ethereum()" src="https://cdn3.iconfinder.com/data/icons/currency-and-cryptocurrency-signs/64/cryptocurrency_blockchain_Ethereum_ETH-256.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "ethereum()" id="ethereum" href="#" role="Ethereum">Ethereum</a>
+                                    </span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "xrp()" src="https://cdn3.iconfinder.com/data/icons/currency-and-cryptocurrency-signs/64/cryptocurrency_blockchain_Ripple_XRP-128.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "xrp()" id="xrp"  href="#" role="XRP">XRP</a>
+                                    </span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Filter</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "bitcoin()" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/45_Bitcoin_logo_logos-256.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "bitcoin()" id="bitcoin"  href="#" role="BitCoin">BitCoin</a>
+                                    </span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "litecoin()" src="https://cdn3.iconfinder.com/data/icons/currency-and-cryptocurrency-signs/64/cryptocurrency_blockchain_Litecoin_LTC-128.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "litecoin()" id="litecoin" href="#" role="LiteCoin">LiteCoin</a>
+                                    </span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "dogcoin()" src="https://cdn0.iconfinder.com/data/icons/blockchain-classic/256/Dogecoin-128.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "dogcoin()" id="dogcoin"  href="#" role="Dogcoin">Dogcoin</a>
+                                    </span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "ethereum()" src="https://cdn3.iconfinder.com/data/icons/currency-and-cryptocurrency-signs/64/cryptocurrency_blockchain_Ethereum_ETH-256.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "ethereum()" id="ethereum" href="#" role="Ethereum">Ethereum</a>
+                                    </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Sign Up For More Features</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					  </div>
+					  <div class="modal-body">
+						<form>
+                            <div class="modal-body">
+                              <div class="form-group">
+                                <label for="email1">Email address</label>
+                                <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
+                              </div>
+                              <div class="form-group">
+                                <label for="password1">Password</label>
+                                <input type="password" class="form-control" id="password1" placeholder="Password">
+                              </div>
+                              <div class="form-group">
+                                <label for="password1">Confirm Password</label>
+                                <input type="password" class="form-control" id="password2" placeholder="Confirm Password">
+                              </div>
+                            </div>
+                            <div class="modal-footer border-top-0 d-flex justify-content-center">
+                              <button type="submit" class="btn btn-success" onclick="success()">Submit</button>
+                            </div>
+                          </form>
+					  </div>
+					  <div class="modal-footer">
+					  </div>
+					</div>
+				  </div>
+				</div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div class="d-flex flex-column align-items-center">
+            <div class="h3 font-weight-bold text-white">Dark Mode</div> <label class="switch"> <input type="checkbox"> <span class="slider round"></span> </label>
+        </div>
+        
+    </section>
+
+    
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const main = document.querySelector('body')
+            const toggleSwitch = document.querySelector('.slider')
+            toggleSwitch.addEventListener('click', () => {
+                main.classList.toggle('dark-theme')
+            })
+        })
+	
+		function hideAll(){
+		    document.getElementById("bitcoin-p").style.display  = "none";
+			document.getElementById("litecoin-p").style.display  = "none";
+			document.getElementById("dogcoin-p").style.display  = "none";
+			document.getElementById("ethereum-p").style.display  = "none";
+			document.getElementById("xrp-p").style.display  = "none";
+		}
+		
+		hideAll();
+        
+        function bitcoin() {
+			hideAll();
+			var x = document.getElementById("bitcoin-p");
+			if (x.style.display == "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+            document.getElementById("nocoin-p").style.display  = "none";
+        }
+
+        function litecoin() {
+			hideAll();
+			var x = document.getElementById("litecoin-p");
+			if (x.style.display == "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+            document.getElementById("nocoin-p").style.display  = "none";
+
+        }
+
+        function dogcoin() {
+			hideAll();
+			var x = document.getElementById("dogcoin-p");
+			if (x.style.display == "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+            document.getElementById("nocoin-p").style.display  = "none";
+
+        }
+
+        function ethereum() {
+			hideAll();
+			var x = document.getElementById("ethereum-p");
+			if (x.style.display == "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+            document.getElementById("nocoin-p").style.display  = "none";
+
+        }
+
+        function xrp() {
+			hideAll();
+			var x = document.getElementById("xrp-p");
+			if (x.style.display == "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+            document.getElementById("nocoin-p").style.display  = "none";
+
+        }
+		
+		function working() {
+			alert('We are working on this feature...');
+		}
+
+        function success() {
+			alert('Successful! Thank You for being a member');
+		}
+           
+            
+    </script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
+</body>
+</html>
