@@ -45,9 +45,14 @@
                     <div class="card p-4 mt-3">
                         <h3 class="heading mt-5 text-center">Hi! Welcome To Crypto Portal!</h3>
                         <div class="d-flex justify-content-center px-5">
-                            <div class="search"> <input type="text" class="search-input" placeholder="Search your favourite crypto currency for latest news..." name=""> <a href="#" onclick="working()" class="search-icon"> <i class="fa fa-search"></i> </a> </div>
+                            <div class="search"> <input type="text" class="search-input" placeholder="Search your favourite crypto currency for latest news..." name=""><a href="#" onclick="working()" class="search-icon"> <i class="fa fa-search"></i> </a><a href="#"  class="search-icon" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa fa-sliders"></i> </a> </div>
+
                         </div>
-                        <div class="row"><h6 class="heading mt-5 text-center"> Or select from below</h6></div>                        
+                        <br>
+                        <div class="row">
+                            <h6 class="heading mt-5 text-center"> Or select from below </h6>
+                            
+                        </div>                        
                         <div class="row mt-4 g-1 px-4 mb-5">
                             <div class="col-md-2">
                                 <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "bitcoin()" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/45_Bitcoin_logo_logos-256.png" width="50">
@@ -79,32 +84,32 @@
                                     </span> </div>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <!-- <div class="col-md-2">
                                 <div class="card-inner p-3 d-flex flex-column align-items-center">
-                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Filter</button>
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">More Filter</button>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-md-2">
-                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "bitcoin()" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/45_Bitcoin_logo_logos-256.png" width="50">
-                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "bitcoin()" id="bitcoin"  href="#" role="BitCoin">BitCoin</a>
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "bitcoin()" src="https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/cardano_ada-256.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "bitcoin()" id="bitcoin"  href="#" role="BitCoin">Cardano</a>
                                     </span> </div>
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "litecoin()" src="https://cdn3.iconfinder.com/data/icons/currency-and-cryptocurrency-signs/64/cryptocurrency_blockchain_Litecoin_LTC-128.png" width="50">
-                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "litecoin()" id="litecoin" href="#" role="LiteCoin">LiteCoin</a>
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "litecoin()" src="https://cdn0.iconfinder.com/data/icons/blockchain-classic/256/Binance_Coin-256.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "litecoin()" id="litecoin" href="#" role="LiteCoin">Binance</a>
                                     </span> </div>
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "dogcoin()" src="https://cdn0.iconfinder.com/data/icons/blockchain-classic/256/Dogecoin-128.png" width="50">
-                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "dogcoin()" id="dogcoin"  href="#" role="Dogcoin">Dogcoin</a>
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "dogcoin()" src="https://cdn3.iconfinder.com/data/icons/popular-cryptocurrencies-vol-2019-1/80/stellar-xlm-cryptocurrency-token-coin-adoption-ecosystem-256.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "dogcoin()" id="dogcoin"  href="#" role="Dogcoin">Stellar</a>
                                     </span> </div>
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "ethereum()" src="https://cdn3.iconfinder.com/data/icons/currency-and-cryptocurrency-signs/64/cryptocurrency_blockchain_Ethereum_ETH-256.png" width="50">
-                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "ethereum()" id="ethereum" href="#" role="Ethereum">Ethereum</a>
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img onclick = "ethereum()" src="https://cdn0.iconfinder.com/data/icons/blockchain-classic/256/Tether-256.png" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text"><a onclick = "ethereum()" id="ethereum" href="#" role="Ethereum">Tether</a>
                                     </span> </div>
                                 </div>
                             </div>
@@ -116,10 +121,11 @@
 				  <div class="modal-dialog">
 					<div class="modal-content">
 					  <div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Sign Up For More Features</h5>
+						<h5 class="modal-title text-center" id="exampleModalLabel">More Filter Option Only Available In Premium Plan</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					  </div>
 					  <div class="modal-body">
+                        <h6 class="text-center">Sign Up Now</h6>
 						<form>
                             <div class="modal-body">
                               <div class="form-group">
@@ -139,15 +145,44 @@
                               <button type="submit" class="btn btn-success" onclick="success()">Submit</button>
                             </div>
                           </form>
-					  </div>
-					  <div class="modal-footer">
-					  </div>
-					</div>
+					    </div>
+                        <h6 class="text-center">Filter using below options</h6>
+
+					    <div class="modal-footer">
+                            
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Year
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Price Range
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Growth
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Top 3
+                                </label>
+                            </div>
+
+					    </div>
 				  </div>
 				</div>
             </div>
         </div>
     </section>
+
+    
     <br>
     <br>
     <section>
